@@ -1,0 +1,430 @@
+@font-face {
+    font-family: 'Inter Bold';
+    src: local('Inter Bold'), url(./fonts/Inter-Bold.ttf);
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: local('Inter'), url(./fonts/Inter-Regular.ttf);
+}
+
+body,
+html {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 1226px;
+    margin: auto;
+}
+
+.navbar {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 21px;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 53px;
+    padding-bottom: 53px;
+}
+
+.supportPhone {
+    font-family: 'Inter Bold';
+}
+
+.info {
+    display: flex;
+    align-items: center;
+}
+
+.supportWrap {
+    display: flex;
+    align-items: center;
+}
+
+.workTime {
+    display: flex;
+    align-items: center;
+    margin-right: 25px;
+    gap: 25px;
+}
+
+.login {
+    background: #000000;
+    border-radius: 21px;
+    width: 129px;
+    height: 34px;
+    color: #fff;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+}
+
+.supportImg {
+    margin-right: 13px;
+}
+
+.supportTitle {
+    margin-right: 5px;
+}
+
+.phonesWrap {
+    display: flex;
+    gap: 20px;
+    margin-right: 25px;
+}
+
+.mainBg {
+    width: 100%;
+    background-color: #8ba7bf;
+    border-top: 36px solid #b9cbd9;
+    border-bottom: 352px solid #b9cbd9;
+    height: 95px;
+    position: absolute;
+    z-index: -999;
+}
+
+main {
+    border-top: 1px solid #fff;
+}
+
+.mainContent {
+    font-family: 'Inter Bold';
+    font-style: italic;
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 75px;
+    margin-top: 48px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.tarif {
+    display: flex;
+    flex-direction: column;
+}
+
+.tarifTitle {
+    width: 749px
+}
+
+.tarifName {
+    margin-top: 50px;
+    height: 80px;
+    line-height: 40px;
+    width: 460px;
+    font-size: 35px;
+}
+
+.bestSales {
+    margin-top: 36px;
+    padding-top: 18px;
+    padding-bottom: 18px;
+    margin-bottom: 91px;
+}
+
+.bestSalesHead {
+    font-family: 'Inter Bold';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 58px;
+}
+
+.salesWrapper {
+    display: flex;
+    width: 100%;
+    background-color: #c4d2df;
+    border-radius: 16px;
+    padding-bottom: 81px;
+    justify-content: center;
+    gap: 51px;
+}
+
+.tarifVariant {
+    margin-top: 81px;
+    width: 361px;
+    height: 489px;
+    background: #FFFFFF;
+    border-radius: 13px;
+}
+
+.tarifHead {
+    font-family: 'Inter Bold';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 21px;
+    line-height: 25px;
+    text-align: center;
+    margin-top: 34px;
+}
+
+.element {
+    display: flex;
+    align-items: center;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 21px;
+}
+
+.elementIco {
+    padding-top: 20px;
+    background-image: url(./components/fluent-mdl2_internet-sharing.png);
+    width: 50px;
+    height: 50px;
+    background-repeat: no-repeat;
+    background-size: auto auto;
+    background-position: center;
+}
+
+.sms {
+    background-image: url(./components/Vector-2.png);
+}
+
+.minutes {
+    background-image: url(./components/Vector-3.png)
+}
+
+.cost {
+    background-image: url(./components/Vector-1.png);
+}
+
+.gift {
+    background-image: url(./components/Vector.png);
+}
+
+.description {
+    padding-left: 22px;
+}
+
+.thisIsMyOrder {
+    transition: 0.2s;
+    display: block;
+    background: #FFF500;
+    border-radius: 36px;
+    border: none;
+    width: 252px;
+    height: 60px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+    margin: auto;
+}
+
+.thisIsMyOrder:hover {
+    box-shadow: 0px 5px 8px 0px rgba(34, 60, 80, 0.2);
+}
+
+footer {
+    background: rgba(139, 167, 192, 0.5);
+}
+
+.popupLogin {
+    z-index: 20;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 516px;
+    height: 306px;
+    background: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    display: none;
+}
+
+.loginHead {
+    margin-top: 27px;
+    margin-bottom: 40px;
+    font-family: 'Inter Bold';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 27px;
+}
+
+.popupLogin input {
+    padding: 0;
+    margin: 0;
+    width: 403px;
+    height: 79px;
+    text-align: center;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 30px;
+    margin-bottom: 46px;
+}
+
+.inputTitle {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+}
+
+.btns {
+    display: flex;
+    gap: 23px;
+}
+
+.cansel {
+    border: none;
+    background-color: #fff;
+    font-family: 'Inter Bold';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 18px;
+    text-align: center;
+    text-decoration-line: underline;
+    color: #000000;
+}
+
+.backdrop {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: gray;
+    opacity: 0.5;
+    z-index: 10;
+}
+
+.popupCard {
+    z-index: 20;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 522px;
+    height: 604px;
+    background: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    display: none;
+    /* align-items: center; */
+}
+
+.dlc {
+    font-family: 'Inter Bold';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 18px;
+}
+
+.popupTarifDesc {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 18px;
+    margin-top: 46px;
+    margin-bottom: 12px;
+    margin-left: 28px;
+}
+
+.margin {
+    margin-left: 41px;
+}
+
+.add {
+    transition: 0.7s;
+    width: 220px;
+    height: 43px;
+    background: #FFF500;
+    border-radius: 36px;
+    border: none;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 21px;
+    text-align: center;
+    margin-left: 41px;
+}
+
+.btnsPopupTarif {
+    display: flex;
+    gap: 13px;
+}
+
+.add:hover {
+    box-shadow: 0px 5px 8px 0px rgba(34, 60, 80, 0.2);
+}
+
+.profile {
+    width: 1278px;
+    height: 552px;
+    background: rgba(139, 167, 192, 0.5);
+    border-radius: 16px;
+    margin-bottom: 87px;
+}
+
+.infoProfile {
+    width: 327px;
+    height: 64px;
+    background: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile {
+    font-family: 'Inter Bold';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 21px;
+    border-top: 1px solid transparent;
+}
+
+.labels {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.profileHead {
+    margin-top: 48px;
+    margin-left: 55px;
+    font-size: 24px;
+    line-height: 29px;
+}
+
+.top-left {
+    margin-left: 183px;
+    margin-top: 33px;
+}
+
+.top-right {
+    margin-left: 256px;
+    margin-top: 33px;
+}
+
+.bottom-left {
+    margin-top: 33px;
+    margin-left: 183px;
+}
+
+.bottom-right {
+    margin-top: 33px;
+    margin-left: 256px;
+}
