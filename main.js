@@ -6,8 +6,8 @@ const popUpLoginBtn = document.querySelector('.popUpLoginBtn')
 const thisIsMyOrder = document.querySelectorAll('.thisIsMyOrder')
 const popupCard = document.querySelectorAll('.popupCard')
 const closePopUp = document.querySelectorAll('.closePopUp')
-
-console.log(closePopUp)
+const logout = document.querySelector('.logout')
+console.log(logout)
 
 closePopUp.forEach((elem, i) => {
     elem.addEventListener('click', () => {
@@ -31,7 +31,6 @@ cansel.addEventListener('click', () => {
     loginPopUp.style.display = 'none'
 })
 popUpLoginBtn.addEventListener('click', () => {
-        window.location.href = './profile.html'
-    })
-    // console.log(headerLoginBtn)
-    // headerLoginBtn.addEventListener('click', () => { console.log(1) })
+    window.location.href = './profile.html'
+
+})
